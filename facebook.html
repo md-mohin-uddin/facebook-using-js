@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook Post Example</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body style="background-color: #f0f2f5">
+    <div class="container">
+      <!-- Input area to write or edit a post -->
+      <div class="post-container">
+        <div class="d-flex align-items-center">
+          <img
+            src="https://via.placeholder.com/50"
+            alt="User"
+            class="profile-img"
+          />
+          <div class="ml-3 mb-3">
+            <h6 class="mb-0">Md Mohin Uddin</h6>
+            <small class="text-muted">What's on your mind?</small>
+          </div>
+        </div>
+
+        <!-- Input field to type a new post -->
+        <textarea
+          id="post-input"
+          class="post-input"
+          rows="3"
+          placeholder="Write a new post..."
+        ></textarea>
+
+        <!-- Post button -->
+        <button
+          type="button"
+          class="btn btn-primary btn-block"
+          onclick="addOrUpdatePost()"
+        >
+          Post
+        </button>
+      </div>
+
+      <!-- Where new posts will appear -->
+      <div id="posts-container"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
